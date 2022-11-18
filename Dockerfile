@@ -3,6 +3,7 @@ FROM node:lts-alpine@sha256:67373bd5d90ea600cb5f0fa58d7a5a4e6ebf50b6e05c50c1d1cc
 COPY ./src /workspace/src
 COPY ./public /workspace/public
 COPY package.json /workspace
+COPY .npmrc /workspace
 WORKDIR /workspace
 RUN npm install 
 RUN npm run build
