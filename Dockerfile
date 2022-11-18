@@ -1,4 +1,4 @@
-FROM node:18 as build
+FROM node:lts-alpine@sha256:67373bd5d90ea600cb5f0fa58d7a5a4e6ebf50b6e05c50c1d1cc22df5134db43 as build
 
 COPY ./src /workspace/src
 COPY ./public /workspace/public
